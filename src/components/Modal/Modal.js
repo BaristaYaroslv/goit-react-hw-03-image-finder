@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { createPortal } from 'react-dom';
+
 import { ModalWindow, Overlay } from './Modal.styled';
 
-const modalRoot = document.getElementById('modal');
+
 
 class Modal extends Component {
   static propTypes = {
