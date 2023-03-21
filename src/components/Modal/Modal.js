@@ -35,13 +35,12 @@ class Modal extends Component {
 
   render() {
     const { src, alt } = this.props.modalInfo;
-    return createPortal(
+    return (
       <Overlay  onClick={this.handlerOnClickModal}>
         <ModalWindow>
           <img src={src} alt={alt} />
         </ModalWindow>
-      </Overlay>,
-      modalRoot
+      </Overlay>
     );
   }
 }
